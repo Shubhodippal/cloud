@@ -1,4 +1,4 @@
-GNU nano 5.4                                                                                       download.php                                                                                                <?php
+<?php
 $uploadDir = "/var/www/html/files/";
 
 if (!isset($_GET["file"])) {

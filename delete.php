@@ -1,4 +1,4 @@
-o 5.4                                                                                        delete.php                                                                                                 <?php
+<?php
 if (isset($_GET["file"])) {
     $fileName = $_GET["file"];
     $filePath = "files/" . $fileName;

@@ -1,4 +1,4 @@
-GNU nano 5.4                                                                                         home.php                                                                                                  <?php
+<?php
 session_start();
 if (!isset($_SESSION["user"])) {
     header("Location: index.php");

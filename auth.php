@@ -1,3 +1,4 @@
+<?php
 $db_host = "localhost";
 $db_user = "webuser";
 $db_pass = "your_secure_password";
