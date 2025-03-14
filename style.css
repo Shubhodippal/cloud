@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50; /* Keeping your existing background */
+    color: #ecf0f1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent for a soft effect */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Upload input styling */
+input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Buttons styling */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Upload button */
+button.upload-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+button.upload-btn:hover {
+    background-color: #1e8449;
+}
+
+/* Logout button */
+a.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 12px;
+    background-color: #c0392b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.logout-btn:hover {
+    background-color: #922b21;
+}
+
+/* File Grid Layout (5 Columns per Row) */
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 files per row */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual file item */
+.file-item {
+    background-color: rgba(255, 255, 255, 0.15); /* Transparent for theme consistency */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); /* Soft blur effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* File Name */
+.file-item p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Buttons for viewing & downloading */
+.file-item button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.view-btn {
+    background-color: #2980b9;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #21618c;
+}
+
+.download-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #1e8449;
+}
+
+/* Preview Section */
+.preview-container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Code Display Styling */
+.code-preview {
+    background: #1e1e1e;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    max-height: 500px;
+    font-family: "Courier New", monospace;
+    text-align: left;
+}
+
+/* File Preview Iframe */
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
