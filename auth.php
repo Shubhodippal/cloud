@@ -29,6 +29,3 @@ function loginUser($email, $password, $conn) {
     return false;
 }
 ?>
-
-
-

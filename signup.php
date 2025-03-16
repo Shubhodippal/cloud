@@ -21,8 +21,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </form>
 
 <p>Already have an account? <a href="index.php"><button>Login</button></a></p>
-
-
-
-
-

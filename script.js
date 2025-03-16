@@ -25,9 +25,9 @@ function fetchFiles() {
                 downloadBtn.textContent = "Download";
                 downloadBtn.classList.add("download-btn");
                 downloadBtn.onclick = () => downloadFile(file);
-
-                const delbtn = document.createElement("button");
-                delbtn.textContent = "Delete";
+		
+		const delbtn = document.createElement("button");
+		delbtn.textContent = "Delete";
                 delbtn.classList.add("delbtn");
                 delbtn.onclick = () => deleteFile(file);
 
@@ -35,7 +35,7 @@ function fetchFiles() {
                 li.appendChild(fileName);
                 li.appendChild(viewBtn);
                 li.appendChild(downloadBtn);
-                li.appendChild(delbtn);
+		li.appendChild(delbtn);
                 fileList.appendChild(li);
             });
         })

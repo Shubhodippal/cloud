@@ -9,10 +9,10 @@ if (!file_exists($uploadDir)) {
 // Handle File Upload
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_FILES["file"])) {
     $fileName = basename($_FILES["file"]["name"]);
-
+    
     // Sanitize the file name to prevent security risks
     $fileName = preg_replace("/[^a-zA-Z0-9\._-]/", "_", $fileName);
-
+    
     // Prevent overwriting by appending a timestamp if the file exists
     $targetFile = $uploadDir . $fileName;
     if (file_exists($targetFile)) {

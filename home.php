@@ -21,12 +21,13 @@ if (!isset($_SESSION["user"])) {
             display: grid;
             grid-template-columns: repeat(5, 1fr); /* 5 files per row */
             gap: 20px;
+            padding: 20px;
             justify-content: center;
             align-items: center;
         }
 
         /* Individual file item */
-        .file-item {
+        .fileList {
             background-color: rgba(255, 255, 255, 0.15); /* Transparent for theme consistency */
             border-radius: 8px;
             padding: 15px;
@@ -39,15 +40,16 @@ if (!isset($_SESSION["user"])) {
         }
 
         /* File Name */
-        .file-item p {
-            font-weight: bold;
-            margin-bottom: 8px;
+        /* Buttons for viewing & downloading */
+        .fileList .button {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
         }
 
-        /* Buttons for viewing & downloading */
-        .file-item button {
-            width: 100%;
-            margin-top: 8px;
+        .fileList button {
+            flex: 1;
+            margin: 0 5px;
             padding: 8px;
             border: none;
             border-radius: 5px;
@@ -65,7 +67,7 @@ if (!isset($_SESSION["user"])) {
         <button onclick="uploadFile()">Upload</button>
 
         <h3>Uploaded Files</h3>
-        <ul id="fileList"></ul>
+        <ul id="fileList" class="file-grid"></ul>
 
         <!-- File Preview Section -->
         <div id="previewArea" class="preview"></div>

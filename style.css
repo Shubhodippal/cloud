@@ -1,11 +1,10 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2c3e50; /* Keeping your existing background */
-    color: #ecf0f1;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(135deg, #6e8efb, #a777e3);
+        text-align: center;
+        margin: 0;
+	padding: 0;
 }
 
 /* Main container */
@@ -60,7 +59,7 @@ a.logout-btn:hover {
 }
 
 /* File Grid Layout (5 Columns per Row) */
-.file-grid {
+.fileList {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 files per row */
     gap: 20px;
